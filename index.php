@@ -51,11 +51,28 @@
                     
                     $statement = $db->prepare('SELECT * FROM items WHERE items.category = ?');
                     $statement->execute(array($category['id']));
+                    // boucle while complete
+                    
+                    // while ($item = $statement->fetch()) {
+                    //     echo '<div class="col-md-6 col-lg-4">
+                    //             <div class="img-thumbnail">
+                    //                 <img src="images/' . $item['image'] . '" class="img-fluid" alt="...">
+                    //                 <div class="price">' . number_format($item['price'], 2, '.', ''). ' €</div>
+                    //                 <div class="caption">
+                    //                     <h4>' . $item['name'] . '</h4>
+                    //                     <p>' . $item['description'] . '</p>
+                    //                     <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Echanger</a>
+                    //                 </div>
+                    //             </div>
+                    //         </div>';
+                    // }
+
+                    // boucle while sans le prix
+
                     while ($item = $statement->fetch()) {
                         echo '<div class="col-md-6 col-lg-4">
                                 <div class="img-thumbnail">
                                     <img src="images/' . $item['image'] . '" class="img-fluid" alt="...">
-                                    <div class="price">' . number_format($item['price'], 2, '.', ''). ' €</div>
                                     <div class="caption">
                                         <h4>' . $item['name'] . '</h4>
                                         <p>' . $item['description'] . '</p>
