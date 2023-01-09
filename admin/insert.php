@@ -99,25 +99,25 @@
                 <form class="form" action="insert.php" role="form" method="post" enctype="multipart/form-data">
                     <br>
                     <div>
-                        <label class="form-label" for="name">Nom:</label>
+                        <label class="form-label" for="name">Nom :</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nom" value="<?php echo $name;?>">
                         <span class="help-inline"><?php echo $nameError;?></span>
                     </div>
                     <br>
                     <div>
-                        <label class="form-label" for="description">Description:</label>
+                        <label class="form-label" for="description">Description :</label>
                         <input type="text" class="form-control" id="description" name="description" placeholder="Description" value="<?php echo $description;?>">
                         <span class="help-inline"><?php echo $descriptionError;?></span>
                     </div>
                     <br>
                     <div>
-                        <label class="form-label" for="price">Prix: (en €)</label>
+                        <label class="form-label" for="price">Prix : (en €)</label>
                         <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="Prix" value="<?php echo $price;?>">
                         <span class="help-inline"><?php echo $priceError;?></span>
                     </div>
                     <br>
                     <div>
-                        <label class="form-label" for="category">Catégorie:</label>
+                        <label class="form-label" for="category">Catégorie :</label>
                         <select class="form-control" id="category" name="category">
                         <?php
                            $db = Database::connect();
@@ -131,7 +131,7 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <label class="form-label" for="image">Sélectionner une image:</label>
+                        <label class="form-label" for="image">Sélectionner une image :</label>
                         <input type="file" id="image" name="image"> 
                         <span class="help-inline"><?php echo $imageError;?></span>
                     </div>
