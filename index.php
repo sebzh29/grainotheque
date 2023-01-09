@@ -76,7 +76,7 @@
                                     <div class="caption">
                                         <h4>' . $item['name'] . '</h4>
                                         <p>' . $item['description'] . '</p>
-                                        <a href="#" class="btn btn-order" role="button"><span class="bi-cart-fill"></span> Echanger</a>
+                                        <a href="#" class="btn btn-order" role="button">Echanger</a>
                                     </div>
                                 </div>
                             </div>';
